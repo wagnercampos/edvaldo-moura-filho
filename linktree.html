@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Edvaldo Moura Filho — Psiquiatra</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #1f3a5f;
+      --azul-dark: #162d4a;
+      --dourado: #dcb045;
+      --dourado-hover: #c99c30;
+      --branco: #ffffff;
+      --fonte-titulo: 'Playfair Display SC', serif;
+      --fonte-corpo: 'DM Sans', sans-serif;
+      --trans: 0.3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--fonte-corpo);
+      background: linear-gradient(160deg, #0d1b2a 0%, #1f3a5f 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1.25rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 460px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* FOTO */
+    .foto-wrap {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--dourado);
+      box-shadow: 0 0 0 5px rgba(220,176,69,.18);
+      margin-bottom: 1.25rem;
+      flex-shrink: 0;
+    }
+    .foto-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* NOME E DADOS */
+    .nome {
+      font-family: var(--fonte-titulo);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--branco);
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: .35rem;
+    }
+    .especialidade {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--dourado);
+      text-align: center;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: .3rem;
+    }
+    .crm {
+      font-size: .75rem;
+      color: rgba(255,255,255,.5);
+      text-align: center;
+      letter-spacing: .05em;
+      margin-bottom: 2rem;
+    }
+
+    /* DIVISOR */
+    .divisor {
+      width: 40px;
+      height: 2px;
+      background: var(--dourado);
+      border-radius: 2px;
+      margin: 0 auto 2rem;
+    }
+
+    /* BOTÕES */
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-family: var(--fonte-corpo);
+      font-size: .95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform var(--trans), box-shadow var(--trans), background var(--trans);
+      cursor: pointer;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,.35);
+    }
+    .btn:active { transform: translateY(0); }
+
+    .btn-wa {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      color: var(--branco);
+      backdrop-filter: blur(6px);
+    }
+    .btn-wa:hover {
+      background: rgba(255,255,255,.14);
+    }
+
+    .btn-site {
+      background: var(--dourado);
+      color: var(--azul);
+      border: 1px solid transparent;
+    }
+    .btn-site:hover {
+      background: var(--dourado-hover);
+    }
+
+    .btn-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+    .btn-label { flex: 1; text-align: center; }
+
+    /* LOGO RODAPÉ */
+    .logo-rodape {
+      margin-top: .5rem;
+      margin-bottom: 1.25rem;
+    }
+    .logo-rodape img {
+      height: 72px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* CRÉDITO */
+    .credito {
+      font-size: .68rem;
+      color: rgba(255,255,255,.3);
+      text-align: center;
+    }
+    .credito a {
+      color: rgba(220,176,69,.55);
+      text-decoration: none;
+      transition: color var(--trans);
+    }
+    .credito a:hover { color: var(--dourado); }
+
+    @media (max-width: 400px) {
+      .nome { font-size: 1.3rem; }
+      .foto-wrap { width: 92px; height: 92px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- FOTO -->
+    <div class="foto-wrap">
+      <img src="Fotos/IMG_6719.JPG" alt="Dr. Edvaldo Moura Filho">
+    </div>
+
+    <!-- NOME -->
+    <p class="nome">Dr. Edvaldo Moura Filho</p>
+    <p class="especialidade">Médico Psiquiatra</p>
+    <p class="crm">CRM-PI 8792 &nbsp;|&nbsp; RQE 6183 &nbsp;|&nbsp; Teresina - PI</p>
+
+    <div class="divisor"></div>
+
+    <!-- BOTÕES -->
+    <div class="btns">
+
+      <!-- Presencial -->
+      <a class="btn btn-wa"
+         href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+presencial.&type=phone_number&app_absent=0"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </span>
+        <span class="btn-label">Agendar Consulta Presencial</span>
+      </a>
+
+      <!-- Online -->
+      <a class="btn btn-wa"
+         href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+gostaria+de+agendar+uma+consulta+online.&type=phone_number&app_absent=0"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </span>
+        <span class="btn-label">Agendar Consulta Online</span>
+      </a>
+
+      <!-- Doctoralia -->
+      <a class="btn btn-wa"
+         href="https://www.doctoralia.com.br/edvaldo-pereira-de-moura-filho-4/psiquiatra/teresina?utm_campaign=1407376&utm_medium=link&utm_source=widget&utm_term=instagram-profile-link"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">
+          <img src="doctoralia-icon.svg" alt="Doctoralia" style="width:20px;height:20px;">
+        </span>
+        <span class="btn-label">Agendar pelo Doctoralia</span>
+      </a>
+
+      <!-- Site -->
+      <a class="btn btn-site"
+         href="https://dredvaldomourafilho.com.br"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1f3a5f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </span>
+        <span class="btn-label">Acesse nosso site</span>
+      </a>
+
+    </div>
+
+    <!-- LOGO RODAPÉ -->
+    <div class="logo-rodape">
+      <img src="logo-rodape.webp" alt="Dr. Edvaldo Moura Filho Psiquiatra">
+    </div>
+
+    <!-- CRÉDITO MOA -->
+    <p class="credito">Desenvolvido por <a href="https://agenciamoa.com.br" target="_blank" rel="noopener">Agência MOA</a></p>
+
+  </div>
+</body>
+</html>

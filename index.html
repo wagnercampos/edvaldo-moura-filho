@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Edvaldo Filho — Psiquiatra em Teresina | CRM 8792</title>
+  <meta name="description" content="Dr. Edvaldo Moura Filho, psiquiatra em Teresina-PI. Atendimento presencial e telemedicina. CRM 8792 | RQE 6183. Psiquiatria humanizada e baseada em evidências.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dredvaldomourafilho.com.br/">
+  <meta property="og:title" content="Dr. Edvaldo Filho — Psiquiatra em Teresina-PI">
+  <meta property="og:description" content="Psiquiatria humanizada e baseada em evidências. Atendimento presencial e telemedicina.">
+  <meta property="og:url" content="https://dredvaldomourafilho.com.br/">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Physician","name":"Dr. Edvaldo Moura Filho","medicalSpecialty":"Psychiatry","identifier":"CRM-PI 8792","address":{"@type":"PostalAddress","addressLocality":"Teresina","addressRegion":"PI","addressCountry":"BR"},"telephone":"+5586994234846","url":"https://dredvaldomourafilho.com.br","sameAs":["https://www.instagram.com/edvaldo.psiquiatra"]}</script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
+  <!-- Umami Analytics -->
+  <script defer src="https://analytics.agenciamoa.com.br/script.js" data-website-id="d110576e-39b8-4142-981f-ce0bd6871647"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #1f3a5f;
+      --azul-dark: #162d4a;
+      --dourado: #dcb045;
+      --dourado-hover: #c99c30;
+      --branco: #ffffff;
+      --cinza-bg: #f5f7fa;
+      --cinza-texto: #6c757d;
+      --texto: #2d3748;
+      --fonte-titulo: 'Playfair Display SC', serif;
+      --fonte-corpo: 'DM Sans', sans-serif;
+      --radius: 14px;
+      --sombra: 0 4px 24px rgba(31,58,95,0.10);
+      --sombra-lg: 0 12px 48px rgba(31,58,95,0.18);
+      --trans: 0.3s ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--fonte-corpo); color: var(--texto); background: var(--branco); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; image-orientation: from-image; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* BUTTONS */
+    .btn-wa {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: var(--dourado); color: var(--azul);
+      font-family: var(--fonte-corpo); font-weight: 600; font-size: 1rem;
+      padding: .875rem 2rem; border-radius: 50px;
+      transition: background var(--trans), transform var(--trans), box-shadow var(--trans);
+    }
+    .btn-wa:hover { background: var(--dourado-hover); transform: translateY(-2px); box-shadow: var(--sombra-lg); }
+    .btn-wa svg { width: 22px; height: 22px; fill: var(--azul); flex-shrink: 0; }
+    .aviso { display: block; font-size: .7rem; color: var(--cinza-texto); margin-top: .5rem; text-align: center; }
+    .section-tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--dourado); margin-bottom: .75rem; }
+    .section-title { font-family: var(--fonte-titulo); font-size: clamp(1.75rem,3vw,2.5rem); color: var(--azul); line-height: 1.2; margin-bottom: .75rem; }
+
+    /* HEADER */
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(31,58,95,.07); transition: box-shadow var(--trans); }
+    .header.scrolled { box-shadow: var(--sombra); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 1.5rem; }
+    .logo { display: flex; align-items: center; gap: .7rem; flex-shrink: 0; }
+    .logo svg { width: 42px; height: 42px; }
+    .logo-nome { font-family: var(--fonte-titulo); font-size: 1rem; font-weight: 700; color: var(--azul); line-height: 1.2; }
+    .logo-crm { font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; color: var(--dourado); font-weight: 600; }
+    nav { display: flex; align-items: center; gap: 2rem; }
+    nav a { font-size: .875rem; font-weight: 500; color: var(--azul); position: relative; transition: color var(--trans); }
+    nav a::after { content: ''; position: absolute; bottom: -3px; left: 0; right: 0; height: 2px; background: var(--dourado); transform: scaleX(0); transition: transform var(--trans); }
+    nav a:hover { color: var(--dourado); }
+    nav a:hover::after { transform: scaleX(1); }
+    .btn-nav { background: var(--azul); color: var(--branco) !important; padding: .55rem 1.3rem; border-radius: 50px; font-weight: 600; font-size: .85rem; transition: background var(--trans); white-space: nowrap; }
+    .btn-nav:hover { background: var(--dourado); color: var(--azul) !important; }
+    .btn-nav::after { display: none !important; }
+    .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: .25rem; }
+    .menu-btn span { display: block; width: 24px; height: 2px; background: var(--azul); margin: 5px 0; transition: var(--trans); }
+
+    /* HERO */
+    .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 70px; background: linear-gradient(160deg, #eef2f8 0%, #ffffff 55%); position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; right: 0; top: 0; width: 48%; height: 100%; background: var(--azul); clip-path: polygon(12% 0,100% 0,100% 100%,0% 100%); z-index: 0; }
+    .hero .container { position: relative; z-index: 1; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; padding: 4rem 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: .5rem; background: rgba(220,176,69,.12); border: 1px solid rgba(220,176,69,.35); color: var(--dourado); font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: .35rem .9rem; border-radius: 50px; margin-bottom: 1.5rem; }
+    .hero h1 { font-family: var(--fonte-titulo); font-size: clamp(2rem,3.8vw,3rem); color: var(--azul); line-height: 1.15; margin-bottom: 1.25rem; }
+    .hero h1 em { font-style: normal; color: var(--dourado); }
+    .hero-sub { font-size: 1.05rem; color: #4a5568; line-height: 1.75; margin-bottom: 2rem; max-width: 430px; }
+    .hero-cta { display: flex; flex-direction: column; align-items: flex-start; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-top: 2.25rem; }
+    .hero-badge { display: flex; align-items: center; gap: .4rem; font-size: .82rem; font-weight: 500; color: #4a5568; }
+    .hero-badge svg { width: 16px; height: 16px; stroke: var(--dourado); fill: none; flex-shrink: 0; }
+    .hero-photo { position: relative; display: flex; justify-content: center; }
+    .hero-frame { position: relative; max-width: 420px; width: 100%; border-radius: 20px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,.28); }
+    .hero-frame img { width: 100%; height: 560px; object-fit: cover; object-position: top center; }
+    .hero-chip { position: absolute; bottom: -16px; left: -16px; background: var(--branco); border-radius: 14px; padding: .875rem 1.25rem; box-shadow: var(--sombra-lg); display: flex; align-items: center; gap: .7rem; }
+    .hero-chip-icon { width: 40px; height: 40px; background: var(--dourado); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .hero-chip-icon svg { width: 20px; height: 20px; stroke: var(--azul); fill: none; stroke-width: 2; }
+    .hero-chip strong { display: block; font-size: .88rem; color: var(--azul); font-weight: 600; }
+    .hero-chip span { font-size: .72rem; color: var(--cinza-texto); }
+
+    /* SOBRE */
+    .sobre { padding: 6rem 0; }
+    .sobre-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: center; }
+    .sobre-photo { position: relative; }
+    .sobre-frame { border-radius: 20px; overflow: hidden; box-shadow: var(--sombra-lg); }
+    .sobre-frame img { width: 100%; height: 540px; object-fit: cover; object-position: top center; }
+    .sobre-deco { position: absolute; top: -18px; left: -18px; width: 110px; height: 110px; border: 3px solid var(--dourado); border-radius: 14px; z-index: -1; opacity: .7; }
+    .sobre-deco2 { position: absolute; bottom: -18px; right: -18px; width: 72px; height: 72px; background: var(--dourado); border-radius: 12px; z-index: -1; opacity: .15; }
+    .sobre-content p { font-size: .975rem; color: #4a5568; line-height: 1.82; margin-bottom: 1.5rem; }
+    .creds { display: flex; flex-direction: column; gap: .7rem; margin-bottom: 2rem; }
+    .cred { display: flex; align-items: flex-start; gap: .7rem; font-size: .875rem; color: var(--texto); }
+    .cred-dot { width: 20px; height: 20px; background: var(--dourado); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .cred-dot svg { width: 10px; height: 10px; }
+
+    /* CONDIÇÕES */
+    .condicoes { padding: 6rem 0; background: var(--cinza-bg); }
+    .sec-header { text-align: center; margin-bottom: 3rem; }
+    .sec-header p { font-size: .975rem; color: var(--cinza-texto); max-width: 480px; margin: 0 auto; }
+    .cond-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 1.1rem; }
+    .cond-card { background: var(--branco); border-radius: var(--radius); padding: 1.5rem 1rem; text-align: center; border: 1px solid rgba(31,58,95,.06); transition: transform var(--trans), box-shadow var(--trans); }
+    .cond-card:hover { transform: translateY(-4px); box-shadow: var(--sombra-lg); }
+    .cond-icon { width: 50px; height: 50px; margin: 0 auto .875rem; background: linear-gradient(135deg,rgba(31,58,95,.07),rgba(220,176,69,.1)); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .cond-icon svg { width: 24px; height: 24px; stroke: var(--azul); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .cond-nome { font-size: .82rem; font-weight: 600; color: var(--azul); line-height: 1.35; }
+    .cond-toggle { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid rgba(31,58,95,.18); background: transparent; cursor: pointer; margin: .75rem auto 0; transition: all var(--trans); flex-shrink: 0; }
+    .cond-toggle svg { width: 10px; height: 10px; stroke: var(--azul); fill: none; stroke-width: 2.5; transition: transform var(--trans); }
+    .cond-card.open .cond-toggle { background: var(--azul); border-color: var(--azul); }
+    .cond-card.open .cond-toggle svg { stroke: var(--branco); transform: rotate(45deg); }
+    .cond-desc { max-height: 0; overflow: hidden; transition: max-height .4s ease, opacity .3s ease, margin .3s ease; opacity: 0; font-size: .78rem; color: var(--cinza-texto); line-height: 1.65; margin-top: 0; text-align: left; }
+    .cond-card.open .cond-desc { max-height: 200px; opacity: 1; margin-top: .75rem; }
+
+    /* ATENDIMENTO */
+    .atendimento { padding: 6rem 0; }
+    .at-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .at-card { border-radius: 20px; overflow: hidden; position: relative; box-shadow: var(--sombra); transition: transform var(--trans), box-shadow var(--trans); }
+    .at-card:hover { transform: translateY(-4px); box-shadow: var(--sombra-lg); }
+    .at-card img { width: 100%; height: 300px; object-fit: cover; object-position: center 20%; }
+    .at-overlay { position: absolute; inset: 0; background: linear-gradient(to top,rgba(22,45,74,.93) 0%,rgba(22,45,74,.25) 65%,transparent 100%); }
+    .at-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.75rem; }
+    .at-badge { display: inline-flex; align-items: center; gap: .35rem; background: var(--dourado); color: var(--azul); font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .28rem .75rem; border-radius: 50px; margin-bottom: .75rem; }
+    .at-badge svg { width: 12px; height: 12px; fill: var(--azul); }
+    .at-info h3 { font-family: var(--fonte-titulo); font-size: 1.4rem; color: var(--branco); margin-bottom: .4rem; }
+    .at-info p { font-size: .85rem; color: rgba(255,255,255,.78); line-height: 1.6; }
+
+    /* COMO AGENDAR */
+    .agendar { padding: 6rem 0; background: var(--cinza-bg); }
+    .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; position: relative; }
+    .step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 2rem; position: relative; }
+    .step-num {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--azul); color: var(--branco);
+      font-family: var(--fonte-titulo); font-size: 1.1rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; position: relative; z-index: 2;
+      box-shadow: 0 0 0 6px rgba(31,58,95,.10);
+    }
+    .step-connector {
+      position: absolute; top: 21px; left: calc(50% + 21px);
+      width: calc(100% - 42px); height: 2px;
+      background: linear-gradient(to right, rgba(31,58,95,.25), rgba(220,176,69,.5));
+      z-index: 1;
+    }
+    .step-icon {
+      width: 72px; height: 72px; border-radius: 18px;
+      background: var(--branco); border: 1.5px solid rgba(31,58,95,.09);
+      box-shadow: var(--sombra);
+      display: flex; align-items: center; justify-content: center;
+      margin: 1.5rem 0 1.25rem;
+    }
+    .step-icon svg { width: 30px; height: 30px; stroke: var(--azul); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .step h3 { font-family: var(--fonte-titulo); font-size: 1rem; color: var(--azul); margin-bottom: .6rem; line-height: 1.3; }
+    .step p { font-size: .875rem; color: var(--cinza-texto); line-height: 1.7; }
+
+    /* CTA FINAL */
+    .cta-sec { padding: 6rem 0; background: linear-gradient(135deg,var(--azul) 0%,var(--azul-dark) 100%); text-align: center; position: relative; overflow: hidden; }
+    .cta-sec::before { content:''; position:absolute; width:500px; height:500px; border-radius:50%; background:rgba(220,176,69,.05); top:-200px; right:-100px; pointer-events:none; }
+    .cta-sec::after { content:''; position:absolute; width:300px; height:300px; border-radius:50%; background:rgba(220,176,69,.04); bottom:-100px; left:-50px; pointer-events:none; }
+    .cta-inner { position: relative; z-index: 1; }
+    .cta-inner .section-title { color: var(--branco); margin-bottom: 1rem; }
+    .cta-inner p { font-size: 1.05rem; color: rgba(255,255,255,.72); margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .cta-actions { display: flex; flex-direction: column; align-items: center; }
+    .btn-doctoralia { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid rgba(255,255,255,.25); color: rgba(255,255,255,.7); font-size: .82rem; padding: .55rem 1.3rem; border-radius: 50px; margin-top: 1rem; transition: all var(--trans); }
+    .btn-doctoralia:hover { border-color: var(--dourado); color: var(--dourado); }
+    .aviso-cta { color: rgba(255,255,255,.4) !important; }
+
+    /* FOOTER */
+    .footer { background: #0d1b2a; padding: 2.25rem 0; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+    .footer-logo .logo-nome { color: var(--branco); }
+    .footer-copy { font-size: .75rem; color: rgba(255,255,255,.38); text-align: center; line-height: 1.7; }
+    .footer-copy a { color: var(--dourado); }
+    .footer-social { display: flex; gap: .65rem; }
+    .footer-social a { width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.55); transition: all var(--trans); }
+    .footer-social a:hover { border-color: var(--dourado); color: var(--dourado); }
+    .footer-social svg { width: 15px; height: 15px; fill: currentColor; }
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) { .cond-grid { grid-template-columns: repeat(4,1fr); } }
+    @media(max-width:768px) {
+      nav { display: none; }
+      nav.open { display: flex; flex-direction: column; align-items: flex-start; position: fixed; top: 70px; left: 0; right: 0; background: var(--branco); padding: 1.5rem; box-shadow: var(--sombra-lg); gap: 1.25rem; z-index: 999; }
+      .menu-btn { display: block; }
+      .hero::after { width: 100%; clip-path: none; top: auto; bottom: 0; height: 40%; }
+      .hero-grid { grid-template-columns: 1fr; padding: 2.5rem 0 4.5rem; gap: 2rem; }
+      .hero-content { order: 1; text-align: center; }
+      .hero-cta { align-items: center; }
+      .hero-badges { justify-content: center; }
+      .hero-photo { order: 2; }
+      .hero-frame { max-width: 300px; margin: 0 auto; }
+      .hero-frame img { height: 360px; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .sobre-frame img { height: 400px; }
+      .cond-grid { grid-template-columns: repeat(2,1fr); }
+      .at-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 2.5rem; }
+      .step { padding: 0; }
+      .step-connector { display: none !important; }
+      .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+      .footer-copy { order: 3; }
+    }
+    @media(max-width:480px) { .hero h1 { font-size: 1.7rem; } }
+
+    /* FADE ANIMATION */
+    .fade { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .fade.in { opacity: 1; transform: translateY(0); }
+    .fade:nth-child(2) { transition-delay: .08s; }
+    .fade:nth-child(3) { transition-delay: .16s; }
+    .fade:nth-child(4) { transition-delay: .24s; }
+    .fade:nth-child(5) { transition-delay: .32s; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="hdr">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#inicio" aria-label="Dr. Edvaldo Filho Psiquiatra">
+        <img src="logo-horizontal.png" alt="Dr. Edvaldo Filho — Psiquiatra CRM 8792" style="height:44px;width:auto;display:block;">
+      </a>
+      <nav id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#condicoes">Condições</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+acessei+o+seu+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0" class="btn-nav" target="_blank" rel="noopener">Agendar Consulta</a>
+      </nav>
+      <button class="menu-btn" id="mBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Presencial &amp; Online — Teresina PI
+        </div>
+        <h1>Cuidado com a <em>saúde mental</em> que você merece</h1>
+        <p class="hero-sub">Psiquiatria humanizada, ética e baseada em evidências. Escuta qualificada e compromisso genuíno com a singularidade de cada pessoa.</p>
+        <div class="hero-cta">
+          <a href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+acessei+o+seu+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+          <span class="aviso">Não atendemos por convênios.</span>
+        </div>
+        <div class="hero-badges">
+          <div class="hero-badge"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>CRM-PI 8792</div>
+          <div class="hero-badge"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>RQE 6183</div>
+          <div class="hero-badge"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Teresina - PI</div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-frame">
+          <img src="Fotos/IMG_6719.JPG" alt="Dr. Edvaldo Moura Filho, psiquiatra em Teresina-PI" fetchpriority="high">
+        </div>
+        <div class="hero-chip">
+          <div class="hero-chip-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div><strong>CRM-PI 8792</strong><span>RQE 6183</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-photo">
+        <div class="sobre-frame"><img src="Fotos/IMG_6733.JPG" alt="Dr. Edvaldo Filho em seu consultório" loading="lazy"></div>
+        <div class="sobre-deco"></div>
+        <div class="sobre-deco2"></div>
+      </div>
+      <div class="sobre-content">
+        <span class="section-tag">Sobre o Médico</span>
+        <h2 class="section-title">Um cuidado que começa pela escuta</h2>
+        <p>Sou Dr. Edvaldo Moura Filho, médico psiquiatra. Acredito que o cuidado em saúde mental começa por uma escuta atenta, sem pressa, sem julgamentos e sem respostas prontas.</p>
+        <p>Procurar um psiquiatra pela primeira vez pode gerar dúvidas, inseguranças e até receio. Muitas pessoas chegam sem saber exatamente como explicar o que sentem — apenas percebem que algo não vai bem, que o sofrimento tem se repetido ou que a rotina já não funciona como antes.</p>
+        <p>Por isso, a consulta é conduzida com acolhimento, clareza e responsabilidade clínica, buscando compreender sua história, seus sintomas, sua rotina, seus relacionamentos, seu sono, seu humor e os fatores que podem estar contribuindo para o momento atual.</p>
+        <p>A partir dessa avaliação, construímos um plano terapêutico individualizado, baseado em evidências e adequado à sua realidade, com decisões compartilhadas ao longo do tratamento.</p>
+        <div class="creds">
+          <div class="cred"><div class="cred-dot"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="#1f3a5f" stroke-width="2" fill="none"/></svg></div><span>Residência médica em Psiquiatria — Hospital Universitário da Universidade Federal do Piauí (HU-UFPI)</span></div>
+        </div>
+        <a href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+acessei+o+seu+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Agendar Consulta
+        </a>
+        <span class="aviso" style="text-align:left">Não atendemos por convênios.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDIÇÕES -->
+<section class="condicoes" id="condicoes">
+  <div class="container">
+    <div class="sec-header">
+      <span class="section-tag">Área de Atuação</span>
+      <h2 class="section-title">Condições que tratamos</h2>
+      <p>Atendimento especializado com abordagem humanizada e baseada em evidências científicas.</p>
+    </div>
+    <div class="cond-grid">
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M20 17.58A5 5 0 0018 8h-1.26A8 8 0 104 15.25"/><line x1="8" y1="19" x2="8" y2="21"/><line x1="16" y1="19" x2="16" y2="21"/><line x1="12" y1="21" x2="12" y2="23"/></svg></div><span class="cond-nome">Depressão</span><p class="cond-desc">Vai além da tristeza comum. A depressão afeta o humor, a energia, o sono e a motivação, comprometendo a qualidade de vida. Tem tratamento eficaz com acompanhamento especializado.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M7 4v16M7 4L3 8m4-4l4 4M17 20V4M17 20l4-4m-4 4l-4-4"/></svg></div><span class="cond-nome">Transtorno Bipolar</span><p class="cond-desc">Caracterizado por oscilações entre episódios de euforia (mania) e depressão. Com diagnóstico preciso e tratamento adequado, é possível estabilizar o humor e manter uma vida plena.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><span class="cond-nome">Ansiedade</span><p class="cond-desc">Preocupação excessiva, tensão constante e sintomas físicos como palpitações e falta de ar. Os transtornos de ansiedade são os mais comuns em saúde mental e respondem bem ao tratamento.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></div><span class="cond-nome">Insônia</span><p class="cond-desc">Dificuldade para iniciar ou manter o sono, com impacto direto no humor, na concentração e na saúde geral. A avaliação psiquiátrica ajuda a identificar causas e definir o melhor tratamento.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><span class="cond-nome">Síndrome do Pânico</span><p class="cond-desc">Crises súbitas de medo intenso com sintomas físicos como coração acelerado, falta de ar e tontura. O tratamento reduz a frequência das crises e devolve a segurança ao paciente.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg></div><span class="cond-nome">TOC</span><p class="cond-desc">Pensamentos intrusivos e repetitivos (obsessões) que geram comportamentos compulsivos para aliviar a ansiedade. O tratamento combina psicoterapia e, quando indicado, medicação.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></div><span class="cond-nome">TDAH</span><p class="cond-desc">Desatenção, hiperatividade e impulsividade que afetam o desempenho no trabalho, nos estudos e nos relacionamentos. O diagnóstico preciso é fundamental — especialmente em adultos.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></div><span class="cond-nome">Transtornos Alimentares</span><p class="cond-desc">Anorexia, bulimia e compulsão alimentar são condições sérias que envolvem a relação com a comida, o corpo e a autoimagem. Exigem abordagem cuidadosa, humanizada e multidisciplinar.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div><span class="cond-nome">TEA</span><p class="cond-desc">O Transtorno do Espectro Autista é caracterizado por diferenças na comunicação social e padrões de comportamento. A avaliação psiquiátrica auxilia no diagnóstico e no suporte adequado.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+
+      <div class="cond-card fade"><div class="cond-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><span class="cond-nome">Transtorno de Personalidade</span><p class="cond-desc">Padrões persistentes de pensamento e comportamento que geram sofrimento e dificultam relacionamentos. O acompanhamento psiquiátrico oferece suporte e estratégias terapêuticas individualizadas.</p><button class="cond-toggle" aria-label="Ver mais"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ATENDIMENTO -->
+<section class="atendimento" id="atendimento">
+  <div class="container">
+    <div class="sec-header">
+      <span class="section-tag">Modalidades</span>
+      <h2 class="section-title">Como o atendimento funciona</h2>
+      <p>Flexibilidade para que o cuidado com a saúde mental se encaixe na sua rotina.</p>
+    </div>
+    <div class="at-grid">
+      <div class="at-card">
+        <img src="Fotos/IMG_6755.JPG" alt="Atendimento presencial — Dr. Edvaldo Filho" loading="lazy">
+        <div class="at-overlay"></div>
+        <div class="at-info">
+          <div class="at-badge"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Presencial</div>
+          <h3>Atendimento Presencial</h3>
+          <p>Consultas em consultório, em ambiente acolhedor e reservado em Teresina - PI.</p>
+        </div>
+      </div>
+      <div class="at-card">
+        <img src="Fotos/IMG_6733.JPG" alt="Telemedicina — Dr. Edvaldo Filho" loading="lazy">
+        <div class="at-overlay"></div>
+        <div class="at-info">
+          <div class="at-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 10l4.553-2.069A1 1 0 0121 8.845v6.31a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>Online</div>
+          <h3>Consulta Online</h3>
+          <p>Consultas online com a mesma qualidade e segurança, de onde você estiver — em todo o Brasil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO AGENDAR -->
+<section class="agendar" id="como-agendar">
+  <div class="container">
+    <div class="sec-header">
+      <span class="section-tag">Simples e rápido</span>
+      <h2 class="section-title">Como agendar sua primeira consulta</h2>
+      <p>Em poucos passos você dá início ao cuidado com a sua saúde mental.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </div>
+        <h3>Entre em contato pelo WhatsApp</h3>
+        <p>Clique no botão de agendamento e envie uma mensagem. Nossa equipe responderá em breve para dar início ao processo.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-connector"></div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>Escolha a modalidade e o horário</h3>
+        <p>Defina se prefere atendimento <strong>presencial</strong> em Teresina ou <strong>telemedicina</strong> online, e escolha o melhor dia e horário para você.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-connector" style="display:none"></div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Confirmação e atendimento</h3>
+        <p>No dia agendado, confirmaremos sua consulta. Chegue com tranquilidade — o cuidado com a sua saúde mental começa aqui.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-sec" id="contato">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-tag" style="color:rgba(220,176,69,.85)">Agende sua consulta</span>
+      <h2 class="section-title">Dê o primeiro passo para cuidar da sua saúde mental</h2>
+      <p>Nem todo sofrimento é visível, mas cuidado importa. Entre em contato e agende sua consulta com o Dr. Edvaldo.</p>
+      <div class="cta-actions">
+        <a href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+acessei+o+seu+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0" class="btn-wa" target="_blank" rel="noopener" style="font-size:1.05rem;padding:1rem 2.5rem">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <span class="aviso aviso-cta">Não atendemos por convênios.</span>
+        <a href="https://www.doctoralia.com.br/edvaldo-pereira-de-moura-filho-4/psiquiatra/teresina?utm_campaign=1407376&utm_medium=link&utm_source=widget&utm_term=instagram-profile-link" class="btn-doctoralia" target="_blank" rel="noopener">Ou agende pelo Doctoralia →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="logo-rodape.webp" alt="Dr. Edvaldo Filho Psiquiatra" style="height:80px;width:auto;display:block;">
+      </div>
+      <p class="footer-copy">© 2026 Dr. Edvaldo Moura Filho. Todos os direitos reservados.<br>
+        <a href="https://www.instagram.com/edvaldo.psiquiatra" target="_blank" rel="noopener">@edvaldo.psiquiatra</a> · Teresina - PI<br>
+        <span style="font-size:.65rem;color:rgba(255,255,255,.22);">Desenvolvido por <a href="https://agenciamoa.com.br" target="_blank" rel="noopener" style="color:rgba(220,176,69,.4);">Agência MOA</a></span></p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/edvaldo.psiquiatra" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5586994234846&text=Ol%C3%A1%2C+acessei+o+seu+site+e+gostaria+de+agendar+uma+consulta.&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0d1b2a;border-top:2px solid #dcb045;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;box-shadow:0 -4px 24px rgba(0,0,0,.3);">
+  <p style="margin:0;font-size:.82rem;color:rgba(255,255,255,.78);max-width:680px;font-family:'DM Sans',sans-serif;line-height:1.5;">
+    🍪 Utilizamos cookies para melhorar sua experiência e analisar o tráfego do site. Ao continuar navegando, você concorda com nossa política de privacidade.
+  </p>
+  <div style="display:flex;gap:.75rem;flex-shrink:0;">
+    <button id="cookie-reject" style="background:transparent;border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.6);font-family:'DM Sans',sans-serif;font-size:.8rem;padding:.45rem 1rem;border-radius:50px;cursor:pointer;transition:.2s;">Recusar</button>
+    <button id="cookie-accept" style="background:#dcb045;border:none;color:#1f3a5f;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;padding:.45rem 1.25rem;border-radius:50px;cursor:pointer;transition:.2s;">Aceitar</button>
+  </div>
+</div>
+
+<script>
+  const hdr = document.getElementById('hdr');
+  window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 20), {passive: true});
+
+  const mBtn = document.getElementById('mBtn');
+  const nav = document.getElementById('nav');
+  mBtn.addEventListener('click', () => nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+  // Cookie consent
+  const cookieBanner = document.getElementById('cookie-banner');
+  if (!localStorage.getItem('cookie-consent')) {
+    cookieBanner.style.display = 'flex';
+  }
+  document.getElementById('cookie-accept').addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'accepted');
+    cookieBanner.style.display = 'none';
+  });
+  document.getElementById('cookie-reject').addEventListener('click', () => {
+    localStorage.setItem('cookie-consent', 'rejected');
+    cookieBanner.style.display = 'none';
+  });
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, {threshold: 0.1, rootMargin: '0px 0px -30px 0px'});
+  document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+
+  // Scroll depth tracking
+  const scrollMarks = [25, 50, 75, 100];
+  const scrollFired = new Set();
+  window.addEventListener('scroll', () => {
+    const el = document.documentElement;
+    const pct = Math.round((el.scrollTop + el.clientHeight) / el.scrollHeight * 100);
+    scrollMarks.forEach(mark => {
+      if (pct >= mark && !scrollFired.has(mark)) {
+        scrollFired.add(mark);
+        if (typeof umami !== 'undefined') umami.track('scroll-depth', { depth: mark + '%' });
+      }
+    });
+  }, { passive: true });
+
+  // Condições — expandir card
+  document.querySelectorAll('.cond-toggle').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const card = btn.closest('.cond-card');
+      card.classList.toggle('open');
+    });
+  });
+
+  // Captura UTMs e salva na sessão
+  (function() {
+    const p = new URLSearchParams(location.search);
+    const keys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+    const d = {};
+    keys.forEach(k => { if (p.get(k)) d[k] = p.get(k); });
+    if (p.get('gclid') && !d.utm_source) d.utm_source = 'google';
+    if (p.get('fbclid') && !d.utm_source) d.utm_source = 'facebook';
+    if (Object.keys(d).length) sessionStorage.setItem('_utm', JSON.stringify(d));
+  })();
+
+  function getUtm() {
+    try { return JSON.parse(sessionStorage.getItem('_utm') || '{}'); } catch(e) { return {}; }
+  }
+
+  // Click tracking
+  function track(event, data) { if (typeof umami !== 'undefined') umami.track(event, { ...getUtm(), ...data }); }
+
+  document.querySelectorAll('a[href*="whatsapp"]').forEach((el, i) => {
+    const labels = ['hero', 'sobre', 'cta-final'];
+    el.addEventListener('click', () => track('clique-whatsapp', { origem: labels[i] || 'outro' }));
+  });
+
+  const doctoralia = document.querySelector('a[href*="doctoralia"]');
+  if (doctoralia) doctoralia.addEventListener('click', () => track('clique-doctoralia', {}));
+
+  document.querySelectorAll('a[href*="instagram"]').forEach(el => {
+    el.addEventListener('click', () => track('clique-instagram', {}));
+  });
+
+  // Time on page tracking
+  const timeMilestones = [30, 60, 120, 300];
+  timeMilestones.forEach(sec => {
+    setTimeout(() => {
+      if (typeof umami !== 'undefined') umami.track('time-on-page', { seconds: sec });
+    }, sec * 1000);
+  });
+</script>
+</body>
+</html>

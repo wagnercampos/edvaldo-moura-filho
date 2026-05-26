@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dredvaldomourafilho.com.br/sitemap.xml
