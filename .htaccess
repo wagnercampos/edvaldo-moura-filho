@@ -3,6 +3,11 @@
 # Mantido pela Agência MOA
 # ============================================================
 
+# IMPORTANTE: existe um WordPress instalado na raiz junto com o
+# index.html estático. A diretiva abaixo garante que o index.html
+# tenha prioridade sobre index.php.
+DirectoryIndex index.html index.php
+
 # --- Força HTTPS (redirect 301 de http://) ---
 RewriteEngine On
 RewriteCond %{HTTPS} off
