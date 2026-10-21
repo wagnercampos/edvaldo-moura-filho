@@ -209,7 +209,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init','1661085734983388');
-  fbq('track','PageView');
+  window.metaEvent=function(nome,dados){
+    var id=nome+'.'+Date.now()+'.'+Math.random().toString(36).slice(2,10);
+    fbq('track',nome,dados||{},{eventID:id});
+    try{fetch('/capi.php',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({event_name:nome,event_id:id,event_source_url:location.href})});}catch(e){}
+  };
+  metaEvent('PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1661085734983388&ev=PageView&noscript=1"></noscript>
   <!-- End Meta Pixel -->
@@ -291,7 +297,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Meta Pixel: clique no WhatsApp vira evento Contact -->
 <script>
 document.querySelectorAll('a[href*="whatsapp"]').forEach(function(el){
-  el.addEventListener('click',function(){ if(window.fbq) fbq('track','Contact',{content_name:'whatsapp'}); });
+  el.addEventListener('click',function(){ if(window.metaEvent) metaEvent('Contact',{content_name:'whatsapp'}); });
 });
 </script>
 </body>
